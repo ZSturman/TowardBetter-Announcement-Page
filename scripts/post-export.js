@@ -7,6 +7,11 @@ const staticSrc = path.join(nextDir, 'static');
 const staticDest = path.join(docsDir, 'static');
 
 console.log('Starting post-export tasks...');
+// Ensure the `docs` directory exists (avoid ENOENT when writing files)
+if (!fs.existsSync(docsDir)) {
+  fs.mkdirSync(docsDir, { recursive: true });
+  console.log(`✓ Created docs directory at ${docsDir}`);
+}
 
 // Create .nojekyll file to prevent GitHub Pages from ignoring files starting with underscore
 fs.writeFileSync(path.join(docsDir, '.nojekyll'), '');
