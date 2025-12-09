@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-  "dev": "next dev",
-  "build": "next build && next-image-export-optimizer",
-  "export": "npm run build && npm run postexport",
-  "postexport": "node ./scripts/post-export.js",
-  "start": "next start",
-  "lint": "next lint",
-  "serve": "npx serve docs"
+    "dev": "next dev",
+    "build": "next build && next-image-export-optimizer",
+    "export": "npm run build && npm run postexport",
+    "postexport": "node ./scripts/post-export.js",
+    "start": "next start",
+    "lint": "next lint",
+    "serve": "npx serve docs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -24,6 +24,7 @@
     "framer-motion": "^11.11.17",
     "lucide-react": "^0.460.0",
     "next": "^15.0.3",
+    "next-image-export-optimizer": "^1.19.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.2",
