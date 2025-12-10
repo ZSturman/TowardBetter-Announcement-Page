@@ -13,6 +13,7 @@ import SignupCardContainer from "@/components/containers/SignupCardContainer";
 import EmailForm from "@/components/forms/EmailForm";
 import ExpertSignupForm from "@/components/forms/ExpertSignupForm";
 import Link from "next/link";
+import { imageLoader } from "@/lib/imageLoader";
 
 export default function Home() {
   const [joinedWaitlist, setJoinedWaitlist] = useState(false);
@@ -44,6 +45,7 @@ export default function Home() {
               key={1}
             >
               <Image
+                loader={imageLoader}
                 src={logo.green.src}
                 alt={logo.green.alt}
                 width={150}
@@ -61,6 +63,7 @@ export default function Home() {
               key={2}
             >
               <Image
+                loader={imageLoader}
                 src={logo.blush.src}
                 alt={logo.blush.alt}
                 width={150}
@@ -78,6 +81,7 @@ export default function Home() {
               transition={{ duration: 0.5 }}
             >
               <Image
+                loader={imageLoader}
                 src={logo.green.src}
                 alt={logo.green.alt}
                 width={150}

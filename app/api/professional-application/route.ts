@@ -1,8 +1,5 @@
-// Demo stub for `POST /api/professional-application`
-// This route intentionally does not send external emails — it's safe for static/demo builds.
-import { NextRequest } from "next/server";
 
-export async function POST(request: NextRequest) {
+export async function POST(request: Request) {
   try {
     const body = await request.json().catch(() => ({}));
     // Echo back submitted data for demo purposes only.

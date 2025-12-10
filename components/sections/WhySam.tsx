@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { womenStatText } from "@/site/media";
+import { imageLoader } from "@/lib/imageLoader";
 
 const WhySam = () => {
   const emphasisVariants = {
@@ -32,6 +33,7 @@ const WhySam = () => {
     <div className="relative w-full py-40 flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
+        loader={imageLoader}
         src={womenStatText.src}
         alt={womenStatText.alt}
         fill

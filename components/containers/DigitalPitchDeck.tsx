@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import digitalPitchDeckSlides from "@/site/digital-pitch-deck"
 import Image from 'next/image'
+import { imageLoader } from "@/lib/imageLoader"
 
 
 
@@ -54,7 +55,7 @@ export default function DigitalPitchDeck() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.3, duration: 0.5 }}
                 >
-                  <Image src={digitalPitchDeckSlides[currentSlide].image} alt={digitalPitchDeckSlides[currentSlide].title} width={800} height={600} />
+                  <Image loader={imageLoader} src={digitalPitchDeckSlides[currentSlide].image} alt={digitalPitchDeckSlides[currentSlide].title} width={800} height={600} />
                   </motion.div>
                 <motion.div
                   className="text-lg"

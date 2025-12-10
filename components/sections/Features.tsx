@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import featuresContent from "@/site/features";
 import Image from "next/image";
+import { imageLoader } from "@/lib/imageLoader";
 
 type FeatureCardprops = FeaturesContent;
 
@@ -19,7 +20,7 @@ function FeatureCard({ title, content, image, footer }: FeatureCardprops) {
         <CardHeader className="flex items-center">
           {image && (
 
-              <Image src={image} alt={title} width={200} height={200} className="group-hover:scale-105 transition-all "/>
+              <Image loader={imageLoader} src={image} alt={title} width={200} height={200} className="group-hover:scale-105 transition-all "/>
  
           )}
           <CardTitle className="text-xl text-center">{title}</CardTitle>

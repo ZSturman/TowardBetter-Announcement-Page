@@ -4,6 +4,7 @@ import { allImages } from "@/site/media";
 import { motion, useScroll, useTransform } from "framer-motion";
 import EmailForm from "../forms/EmailForm";
 import ShareSam from "../containers/ShareSam";
+import { imageLoader } from "@/lib/imageLoader";
 
 type HeroProps = {
   joinedWaitlist: boolean;
@@ -25,6 +26,7 @@ const Hero = ({ joinedWaitlist, setJoinedWaitlist }: HeroProps) => {
         style={{ y }} // Apply the parallax effect
       >
         <Image
+          loader={imageLoader}
           src={bgImg.src}
           alt={bgImg.alt}
           placeholder="blur"
