@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const digitalPitchDeckSlides: DigitalPitchDeckSlide[] = [
   {
@@ -11,7 +12,7 @@ const digitalPitchDeckSlides: DigitalPitchDeckSlide[] = [
         <p>Building strong support networks is more critical than ever.</p>
       </div>
     ),
-    image: "/images/Women Report Network Support.png",
+    image: `${basePath}/images/Women Report Network Support.png`,
     buttons: [
       <Button variant="default" key={1}>Discover More</Button>,
     ],
@@ -25,7 +26,7 @@ const digitalPitchDeckSlides: DigitalPitchDeckSlide[] = [
         <p>The pandemic has reshaped career trajectories for many women, presenting unique opportunities and hurdles.</p>
       </div>
     ),
-    image: "/images/Three Figures at Sunrise.jpg",
+    image: `${basePath}/images/Three Figures at Sunrise.jpg`,
     buttons: [
       <Button variant="outline" key={2}>Learn More</Button>,
     ],
@@ -40,7 +41,7 @@ const digitalPitchDeckSlides: DigitalPitchDeckSlide[] = [
         <p>This growing crisis demands community and systemic support.</p>
       </div>
     ),
-    image: "/images/Close-Up of Interlocked Arms.jpg",
+    image: `${basePath}/images/Close-Up of Interlocked Arms.jpg`,
     buttons: [
       <Button variant="secondary" key={3}>Explore Solutions</Button>,
     ],
@@ -55,7 +56,7 @@ const digitalPitchDeckSlides: DigitalPitchDeckSlide[] = [
         <p>Our solution fosters connections and builds stronger communities.</p>
       </div>
     ),
-    image: "/images/Diverse Women in Neutral Attire.jpeg",
+    image: `${basePath}/images/Diverse Women in Neutral Attire.jpeg`,
     buttons: [
       <Button variant="secondary" key={4}>Join the Network</Button>,
       <Button variant="ghost" key={5}>Learn More</Button>,

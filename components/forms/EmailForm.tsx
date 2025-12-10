@@ -46,10 +46,9 @@ const EmailForm = ({ joinedWaitlist, setJoinedWaitlist }: EmailFormProps) => {
           <div className="flex-1">
             <Input
               type="email"
-              placeholder="Enter your email"
+              placeholder="This is a demo site. Type whatever you like here..."
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
               className="w-full bg-opacity-50 bg-white"
               disabled={isLoading || isSuccess}
             />

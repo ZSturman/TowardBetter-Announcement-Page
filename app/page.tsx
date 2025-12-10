@@ -201,7 +201,9 @@ export default function Home() {
 
       <section className="w-full pt-20 pb-10 bg-samGreenDark text-samBlush px-10">
         <p className="text-xl text-center mb-8 font-samPlayfair">
-          For media inquiries or to request a press kit, please contact us at hello [at] example.com (demo)
+         Created by Zachary Sturman. 
+         <br />
+         To see me on GitHub, visit <a href="https://github.com/ZSturman" className="text-samBlush">my profile</a>.
         </p>
 
         <Link href="/terms-of-service" className="text-samBlush">
