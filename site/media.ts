@@ -1,27 +1,29 @@
-import stylizedDuoInBlackAndWhite from "@/public/images/Stylized Duo in Black and White.png";
-import abstractPortraitWithRedPattern from "@/public/images/Abstract Portrait with Red Pattern.png";
-import stripedBackgroundWithRecliningFigure from "@/public/images/Striped Background with Reclining Figure.png";
-import doubleExposureFaces from "@/public/images/Double Exposure Faces with Abstract Design.png";
-import diverseWomenInNeutralAttire from "@/public/images/Diverse Women in Neutral Attire.jpeg";
-import minimalistBlackAndWhiteWithSnail from "@/public/images/Minimalist Black and White with Snail.jpg";
-import facelessPersonShopping from "@/public/images/Collage of Faceless Person Shopping.png";
-import highHeelsWithRainbowDesign from "@/public/images/High Heels with Rainbow Design.png";
-import artDecoFashionCollage from "@/public/images/Art Deco-Inspired Fashion Collage.png";
-import threeFiguresAtSunrise from "@/public/images/Three Figures at Sunrise.jpg";
-import rainbowDoorway from "@/public/images/Doorway to a Rainbow Universe.png";
-import colorfulPuzzleCollaboration from "@/public/images/Collaboration with Colorful Puzzle Pieces.png";
-import abstractSilhouettesWithSymbols from "@/public/images/Abstract Silhouettes with Cosmic Connection.png";
-import only28PercentSupport from "@/public/images/Women Report Network Support.png";
-import opticalIllusionWoman from "@/public/images/Woman in Optical Illusion Spirals.png";
-import celestialHandsWithHeart from "@/public/images/Celestial Hands Holding Heart.png";
-import colorfulLightHand from "@/public/images/Colorful Light with Outstretched Hand.jpg";
-import interlockedArmsImg from "@/public/images/Close-Up of Interlocked Arms.jpg";
-import teamworkBuildingShapes from "@/public/images/Illustration of Team Building with Shapes.png";
-import collaborativeEffortWithGreenBall from "@/public/images/Collaborative Effort with Green Ball.png";
-import samLogoBlush from "@/public/images/Sam Logo - Blush.svg";
-import samLogoEmerald from "@/public/images/Sam Logo - Emerald.svg";
-import samLogoSangria from "@/public/images/Sam Logo - Sangria.svg";
-import womenStatTextImg from "@/public/images/Women Stat Text.png";
+// Images are served from the `public` folder. Use public URL paths
+// rather than importing them as modules.
+const stylizedDuoInBlackAndWhite = "/images/Stylized Duo in Black and White.png";
+const abstractPortraitWithRedPattern = "/images/Abstract Portrait with Red Pattern.png";
+const stripedBackgroundWithRecliningFigure = "/images/Striped Background with Reclining Figure.png";
+const doubleExposureFaces = "/images/Double Exposure Faces with Abstract Design.png";
+const diverseWomenInNeutralAttire = "/images/Diverse Women in Neutral Attire.jpeg";
+const minimalistBlackAndWhiteWithSnail = "/images/Minimalist Black and White with Snail.jpg";
+const facelessPersonShopping = "/images/Collage of Faceless Person Shopping.png";
+const highHeelsWithRainbowDesign = "/images/High Heels with Rainbow Design.png";
+const artDecoFashionCollage = "/images/Art Deco-Inspired Fashion Collage.png";
+const threeFiguresAtSunrise = "/images/Three Figures at Sunrise.jpg";
+const rainbowDoorway = "/images/Doorway to a Rainbow Universe.png";
+const colorfulPuzzleCollaboration = "/images/Collaboration with Colorful Puzzle Pieces.png";
+const abstractSilhouettesWithSymbols = "/images/Abstract Silhouettes with Cosmic Connection.png";
+const only28PercentSupport = "/images/Women Report Network Support.png";
+const opticalIllusionWoman = "/images/Woman in Optical Illusion Spirals.png";
+const celestialHandsWithHeart = "/images/Celestial Hands Holding Heart.png";
+const colorfulLightHand = "/images/Colorful Light with Outstretched Hand.jpg";
+const interlockedArmsImg = "/images/Close-Up of Interlocked Arms.jpg";
+const teamworkBuildingShapes = "/images/Illustration of Team Building with Shapes.png";
+const collaborativeEffortWithGreenBall = "/images/Collaborative Effort with Green Ball.png";
+const samLogoBlush = "/images/Sam Logo - Blush.svg";
+const samLogoEmerald = "/images/Sam Logo - Emerald.svg";
+const samLogoSangria = "/images/Sam Logo - Sangria.svg";
+const womenStatTextImg = "/images/Women Stat Text.png";
 
 const logoBlush: ImageElement = {
   src: samLogoBlush,

@@ -44,7 +44,3 @@ next-env.d.ts
 # Generated optimized images
 /public/static
 /public/images/static
-
-# Generated optimized images
-/public/static
-/public/images/static
