@@ -15,6 +15,7 @@ const nextConfig = {
     nextImageExportOptimizer_exportFolderName: "static",
     nextImageExportOptimizer_generateAndUseBlurImages: "true",
     nextImageExportOptimizer_remoteImageCacheTTL: "0",
+    NEXT_PUBLIC_BASE_PATH: "/TowardBetter-Announcement-Page",
   },
   images: {
     loader: "custom",
@@ -28,9 +29,9 @@ const nextConfig = {
     ],
   },
   webpack(config) {
-  config.output.publicPath = "/TowardBetter-Announcement-Page/";
-  return config;
-}
+    config.output.publicPath = "/TowardBetter-Announcement-Page/";
+    return config;
+  },
 };
 
 export default nextConfig;

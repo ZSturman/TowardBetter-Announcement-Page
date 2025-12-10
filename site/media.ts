@@ -1,29 +1,29 @@
-// Images are served from the `public` folder. Use public URL paths
-// rather than importing them as modules.
-const stylizedDuoInBlackAndWhite = "/images/Stylized Duo in Black and White.png";
-const abstractPortraitWithRedPattern = "/images/Abstract Portrait with Red Pattern.png";
-const stripedBackgroundWithRecliningFigure = "/images/Striped Background with Reclining Figure.png";
-const doubleExposureFaces = "/images/Double Exposure Faces with Abstract Design.png";
-const diverseWomenInNeutralAttire = "/images/Diverse Women in Neutral Attire.jpeg";
-const minimalistBlackAndWhiteWithSnail = "/images/Minimalist Black and White with Snail.jpg";
-const facelessPersonShopping = "/images/Collage of Faceless Person Shopping.png";
-const highHeelsWithRainbowDesign = "/images/High Heels with Rainbow Design.png";
-const artDecoFashionCollage = "/images/Art Deco-Inspired Fashion Collage.png";
-const threeFiguresAtSunrise = "/images/Three Figures at Sunrise.jpg";
-const rainbowDoorway = "/images/Doorway to a Rainbow Universe.png";
-const colorfulPuzzleCollaboration = "/images/Collaboration with Colorful Puzzle Pieces.png";
-const abstractSilhouettesWithSymbols = "/images/Abstract Silhouettes with Cosmic Connection.png";
-const only28PercentSupport = "/images/Women Report Network Support.png";
-const opticalIllusionWoman = "/images/Woman in Optical Illusion Spirals.png";
-const celestialHandsWithHeart = "/images/Celestial Hands Holding Heart.png";
-const colorfulLightHand = "/images/Colorful Light with Outstretched Hand.jpg";
-const interlockedArmsImg = "/images/Close-Up of Interlocked Arms.jpg";
-const teamworkBuildingShapes = "/images/Illustration of Team Building with Shapes.png";
-const collaborativeEffortWithGreenBall = "/images/Collaborative Effort with Green Ball.png";
-const samLogoBlush = "/images/Sam Logo - Blush.svg";
-const samLogoEmerald = "/images/Sam Logo - Emerald.svg";
-const samLogoSangria = "/images/Sam Logo - Sangria.svg";
-const womenStatTextImg = "/images/Women Stat Text.png";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+const stylizedDuoInBlackAndWhite = `${basePath}/images/Stylized Duo in Black and White.png`
+const abstractPortraitWithRedPattern = `${basePath}/images/Abstract Portrait with Red Pattern.png`
+const stripedBackgroundWithRecliningFigure = `${basePath}/images/Striped Background with Reclining Figure.png`
+const doubleExposureFaces = `${basePath}/images/Double Exposure Faces with Abstract Design.png`
+const diverseWomenInNeutralAttire = `${basePath}/images/Diverse Women in Neutral Attire.jpeg`
+const minimalistBlackAndWhiteWithSnail = `${basePath}/images/Minimalist Black and White with Snail.jpg`
+const facelessPersonShopping = `${basePath}/images/Collage of Faceless Person Shopping.png`
+const highHeelsWithRainbowDesign = `${basePath}/images/High Heels with Rainbow Design.png`
+const artDecoFashionCollage = `${basePath}/images/Art Deco-Inspired Fashion Collage.png`
+const threeFiguresAtSunrise = `${basePath}/images/Three Figures at Sunrise.jpg`
+const rainbowDoorway = `${basePath}/images/Doorway to a Rainbow Universe.png`
+const colorfulPuzzleCollaboration = `${basePath}/images/Collaboration with Colorful Puzzle Pieces.png`
+const abstractSilhouettesWithSymbols = `${basePath}/images/Abstract Silhouettes with Cosmic Connection.png`
+const only28PercentSupport = `${basePath}/images/Women Report Network Support.png`
+const opticalIllusionWoman = `${basePath}/images/Woman in Optical Illusion Spirals.png`
+const celestialHandsWithHeart = `${basePath}/images/Celestial Hands Holding Heart.png`
+const colorfulLightHand = `${basePath}/images/Colorful Light with Outstretched Hand.jpg`
+const interlockedArmsImg = `${basePath}/images/Close-Up of Interlocked Arms.jpg`
+const teamworkBuildingShapes = `${basePath}/images/Illustration of Team Building with Shapes.png`
+const collaborativeEffortWithGreenBall = `${basePath}/images/Collaborative Effort with Green Ball.png`
+const samLogoBlush = `${basePath}/images/Sam Logo - Blush.svg`
+const samLogoEmerald = `${basePath}/images/Sam Logo - Emerald.svg`
+const samLogoSangria = `${basePath}/images/Sam Logo - Sangria.svg`
+const womenStatTextImg = `${basePath}/images/Women Stat Text.png`
 
 const logoBlush: ImageElement = {
   src: samLogoBlush,
