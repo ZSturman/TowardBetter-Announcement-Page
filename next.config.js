@@ -7,7 +7,7 @@ const nextConfig = {
   basePath: "/TowardBetter-Announcement-Page",
   assetPrefix: "/TowardBetter-Announcement-Page/",
   transpilePackages: ["next-image-export-optimizer"],
-    env: {
+  env: {
     nextImageExportOptimizer_imageFolderPath: "public/images",
     nextImageExportOptimizer_exportFolderPath: "docs",
     nextImageExportOptimizer_quality: "75",
@@ -17,20 +17,20 @@ const nextConfig = {
     nextImageExportOptimizer_remoteImageCacheTTL: "0",
   },
   images: {
-        loader: "custom",
+    loader: "custom",
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'picsum.photos',
-
+        protocol: "https",
+        hostname: "picsum.photos",
       },
-      
     ],
   },
+  webpack(config) {
+  config.output.publicPath = "/TowardBetter-Announcement-Page/";
+  return config;
+}
 };
 
 export default nextConfig;
-
-
