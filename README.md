@@ -1,4 +1,4 @@
-**Sam Announcement — Static Demonstration Site**
+**TowardBetter Announcement — Static Demonstration Site**
 
 This repository contains a static announcement/landing page built to demonstrate design and frontend engineering skills. It's not a full product backend — it's a polished, component-driven static site showing what I can deliver: layout, responsive UI, animations, forms, and small serverless routes for demo purposes.
 
